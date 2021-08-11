@@ -24,8 +24,8 @@ export default function PaymentSuccessfullScreen({navigation}){
           </TouchableOpacity>
         </View>
         <View style={styles.indicator}>
-          <View style={styles.previous}>
-            <Text style={styles.iconText}>Previous</Text>
+          <View style={styles.previous} >
+            <Text style={styles.iconText} onPress={()=>{navigation.navigate("AddToCart")}}>Previous</Text>
           </View>
           <View style={styles.indicatorContainer}>
             <View style={styles.section1}></View>

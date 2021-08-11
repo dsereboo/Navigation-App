@@ -24,8 +24,8 @@ export default function AddToCartScreen({navigation}){
           </TouchableOpacity>
         </View>
         <View style={styles.indicator}>
-          <View style={styles.previous}>
-            <Text style={styles.iconText}>Previous</Text>
+          <View style={styles.previous} >
+            <Text style={styles.iconText}  onPress={()=>{navigation.navigate("OnlineShopping")}}>Previous</Text>
           </View>
           <View style={styles.indicatorContainer}>
             <View style={styles.section1}></View>
@@ -33,7 +33,7 @@ export default function AddToCartScreen({navigation}){
             <View style={styles.section2}></View>
           </View>
           <View style={styles.end}>
-            <Text style={[styles.iconText, styles.skip]}>Skip</Text>
+            <Text style={[styles.iconText, styles.skip]}  onPress={()=>{navigation.navigate("PaymentSuccessful")}}>Skip</Text>
           </View>
         </View>
       </View>

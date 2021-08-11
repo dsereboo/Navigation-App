@@ -32,8 +32,8 @@ export default function OnlineShoppingScreen({navigation}){
             <View style={styles.section3}></View>
             <View style={styles.section2}></View>
           </View>
-          <View style={styles.skip}>
-            <Text style={styles.iconText}>Skip</Text>
+          <View style={styles.skip} >
+            <Text style={styles.iconText}  onPress={()=>{navigation.navigate("AddToCart")}} >Skip</Text>
           </View>
         </View>
       </View>
