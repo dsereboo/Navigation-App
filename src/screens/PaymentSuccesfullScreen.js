@@ -1,6 +1,6 @@
 import React from "react"
 import { Image, StyleSheet, Text,TouchableOpacity,View } from "react-native"
-import Inidactor from "./Indicator"
+import Inidactor from "../components/Indicator"
 
 export default function PaymentSuccesfullScreen(){
     return (
@@ -16,7 +16,7 @@ export default function PaymentSuccesfullScreen(){
           </Text>
         </View>
         <View style={styles.imageContainer}>
-          <Image style={styles.image} source={require("../assets/payment.png")} />
+          <Image style={styles.image} source={require("../../assets/payment.png")} />
         </View>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button}>
@@ -42,7 +42,7 @@ const styles=StyleSheet.create({
         flex:10,
         justifyContent:"flex-start",
         marginHorizontal: 20,
-        marginTop:60,
+        
     },
     titleContainer:{
         flex:0.8,

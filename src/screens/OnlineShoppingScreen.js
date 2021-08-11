@@ -1,6 +1,6 @@
 import React from "react"
 import { Image, StyleSheet, Text,TouchableOpacity,View } from "react-native"
-import Inidactor from "./Indicator"
+import Inidactor from "../components/Indicator"
 
 export default function OnlineShoppingScreen(){
     return (
@@ -18,7 +18,7 @@ export default function OnlineShoppingScreen(){
         <View style={styles.imageContainer}>
           <Image
             style={styles.image}
-            source={require("../assets/online.png")}
+            source={require("../../assets/online.png")}
           />
         </View>
         <View style={styles.buttonContainer}>
@@ -45,7 +45,7 @@ const styles=StyleSheet.create({
         flex:10,
         justifyContent:"flex-start",
         marginHorizontal: 20,
-        marginTop:60,
+       
     },
     titleContainer:{
         flex:0.8,
