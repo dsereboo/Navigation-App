@@ -2,7 +2,7 @@ import React from "react"
 import { Image, StyleSheet, Text,TouchableOpacity,View } from "react-native"
 import Inidactor from "../components/Indicator"
 
-export default function OnlineShoppingScreen(){
+export default function OnlineShoppingScreen({navigation}){
     return (
       <View style={styles.container}>
         <View style={styles.titleContainer}>
@@ -22,7 +22,7 @@ export default function OnlineShoppingScreen(){
           />
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate("AddToCart")}}>
             <Text style={styles.buttonText}>Next</Text>
           </TouchableOpacity>
         </View>

@@ -2,7 +2,7 @@ import React from "react"
 import { Image, StyleSheet, Text,TouchableOpacity,View } from "react-native"
 import Inidactor from "../components/Indicator";
 
-export default function AddToCartScreen(){
+export default function AddToCartScreen({navigation}){
     return (
       <View style={styles.container}>
         <View style={styles.titleContainer}>
@@ -19,7 +19,7 @@ export default function AddToCartScreen(){
           <Image style={styles.image} source={require("../../assets/cart.png")} />
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity style={styles.button} onPress={()=>{navigation.navigate("PaymentSuccessful")}}>
             <Text style={styles.buttonText}>Next</Text>
           </TouchableOpacity>
         </View>

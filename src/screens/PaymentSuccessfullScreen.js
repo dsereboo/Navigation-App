@@ -2,7 +2,7 @@ import React from "react"
 import { Image, StyleSheet, Text,TouchableOpacity,View } from "react-native"
 import Inidactor from "../components/Indicator"
 
-export default function PaymentSuccesfullScreen(){
+export default function PaymentSuccessfullScreen({navigation}){
     return (
       <View style={styles.container}>
         <View style={styles.titleContainer}>
